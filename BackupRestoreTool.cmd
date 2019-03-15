@@ -45,9 +45,7 @@ ECHO     2) Backup all partitions from partition list file
 ECHO.
 ECHO     3) Restore a backup
 ECHO.
-ECHO     4) Advanced...
-ECHO.
-ECHO     5) Quit
+ECHO     4) Quit
 ECHO.
 ECHO.
 SET CHOICE_MAIN=
@@ -62,9 +60,6 @@ IF "%CHOICE_MAIN%"=="1" (
 ) ELSE IF "%CHOICE_MAIN%"=="3" (
 	CALL :CHOICE_RESTORE
 ) ELSE IF "%CHOICE_MAIN%"=="4" (
-	ECHO.
-	ECHO [i] Nothing here yet...
-) ELSE IF "%CHOICE_MAIN%"=="5" (
 	GOTO :EOF
 ) ELSE (
 	ECHO [^^!] Invalid option.
@@ -264,9 +259,10 @@ GOTO :EOF
 :CLEAR_TITLE
 CLS
 ECHO --------------------------------------------------------
-ECHO -     Mi A1 Low-level Backup/Restore/Flashing tool     -
+ECHO -     EDL Backup/Restore/Flashing tool     -
 ECHO -                                                      -
 ECHO -          By CosmicDan@XDA and CosmicDan.com          -
+ECHO -          Edited by deadman96385 for fujisan          -
 ECHO -    Based on EMMCDL scripts thanks to @emuzychenko    -
 ECHO --------------------------------------------------------
 ECHO.
